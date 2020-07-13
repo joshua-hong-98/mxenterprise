@@ -1,9 +1,14 @@
-/**
-* Template Name: BizLand - v1.0.1
-* Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+/*--------------------------------------------------------------
+# Color Variables
+--------------------------------------------------------------*/
+:root {
+  --yellow: #E7BB41; /* Yellow */
+  --dark-yellow: #D1A93B; /* Dark Yellow */
+  --onyx: #393E41; /* Onyx Black */
+  --light-grey: #5D656A; /* Platinum */
+  --dark-grey: #51585C; /* Timberwolf Grey */
+  --cream: #EBEBEB; /* Cream White */
+}
 
 /*--------------------------------------------------------------
 # General
@@ -14,16 +19,20 @@ body {
 }
 
 a {
-  color: #106eea;
+  color: var(--yellow);
 }
 
 a:hover {
-  color: #3b8af2;
+  color: var(--dark-yellow);
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
+}
+
+span {
+  color: var(--yellow) !important;
 }
 
 /*--------------------------------------------------------------
@@ -114,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: #106eea;
+  background: var(--yellow);
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
@@ -160,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #fff;
+  background: var(--onyx);
   transition: all 0.5s;
   z-index: 997;
   padding: 25px 0;
@@ -184,11 +193,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo a {
-  color: #222222;
+  color: var(--cream);
 }
 
 #header .logo a span {
-  color: #106eea;
+  color: var(--yellow);
 }
 
 #header .logo img {
@@ -228,7 +237,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: block;
   position: relative;
-  color: #222222;
+  color: var(--cream);
   transition: 0.3s;
   font-size: 15px;
   font-weight: 600;
@@ -243,7 +252,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: #106eea;
+  background-color: var(--yellow);
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -255,7 +264,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #106eea;
+  color: var(--yellow);
 }
 
 .nav-menu .drop-down ul {
@@ -751,6 +760,10 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+#about {
+  background-color: var(--dark-grey);
+}
+
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
@@ -903,6 +916,10 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+#services {
+  background-color: var(--light-grey);
+}
+
 .services .icon-box {
   text-align: center;
   border: 1px solid #e2eefd;
@@ -1516,10 +1533,14 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+#contact {
+  background-color: var(--dark-grey)
+}
+
 .contact .info-box {
   color: #444444;
   text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.3);
+  box-shadow: 0 0 30px rgba(57, 62, 65, 0.7);
   padding: 20px 0 30px 0;
 }
 
@@ -1655,9 +1676,9 @@ section {
 #footer {
   background: #fff;
   padding: 0 0 30px 0;
-  color: #444444;
+  color: var(--cream);
   font-size: 14px;
-  background: #f1f6fe;
+  background: var(--onyx);
 }
 
 #footer .footer-newsletter {
@@ -1713,7 +1734,7 @@ section {
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fff;
+  background: var(--light-grey);
 }
 
 #footer .footer-top .footer-contact {
@@ -1817,7 +1838,7 @@ section {
   float: right;
   text-align: center;
   font-size: 13px;
-  color: #444444;
+  color: var(--cream);
 }
 
 @media (max-width: 768px) {
