@@ -14,8 +14,14 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #444444;
+  font-family: "PT Sans Narrow", sans-serif !important;
+  color: var(--cream);
+  font-size: 1.1em;
+}
+
+input {
+  font-family: "PT Sans Narrow", sans-serif !important;
+  font-size: 1.1em !important;
 }
 
 a {
@@ -28,7 +34,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Oswald", sans-serif !important;
 }
 
 span {
@@ -100,14 +106,15 @@ span {
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background: #106eea;
-  color: #fff;
+  background: var(--yellow);
+  color: var(--onyx);
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: #3284f1;
-  color: #fff;
+  background: var(--dark-yellow);
+  color: var(--onyx);
+  cursor: pointer !important;
 }
 
 /*--------------------------------------------------------------
@@ -239,10 +246,10 @@ span {
   position: relative;
   color: var(--cream);
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 1.2em;
   font-weight: 600;
   padding: 0 3px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "PT Sans Narrow", sans-serif;
 }
 
 .nav-menu > ul > li > a:before {
@@ -504,21 +511,21 @@ span {
 }
 
 #hero .btn-get-started {
-  font-family: "Roboto", sans-serif;
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.8em;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 10px 28px;
-  border-radius: 4px;
+  padding: 8px 24px;
+  border-radius: 12px;
   transition: 0.5s;
   color: #fff;
-  background: #106eea;
+  background: var(--yellow);
 }
 
 #hero .btn-get-started:hover {
-  background: #247cf0;
+  background: var(--dark-yellow);
 }
 
 #hero .btn-watch-video {
@@ -602,8 +609,8 @@ section {
   font-weight: 700;
   padding: 8px 20px;
   margin: 0;
-  background: #e7f1fd;
-  color: #106eea;
+  background: var(--onyx);
+  color: var(--yellow);
   display: inline-block;
   text-transform: uppercase;
   border-radius: 50px;
@@ -621,7 +628,6 @@ section {
 
 .section-title p {
   margin: 15px auto 0 auto;
-  font-weight: 600;
 }
 
 @media (min-width: 1024px) {
@@ -1099,6 +1105,10 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+#portfolio {
+  background-color: var(--dark-grey);
+}
+
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 15px auto;
@@ -1536,11 +1546,40 @@ section {
 # Contact
 --------------------------------------------------------------*/
 #contact {
-  background-color: var(--dark-grey)
+  background-color: var(--light-grey)
+}
+
+#sendMessageButton {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 24px;
+  border-radius: 12px;
+  border-color: transparent;
+  transition: 0.5s;
+  color: #fff;
+  background: var(--yellow);
+}
+
+#sendMessageButton:hover {
+  background: var(--dark-yellow);
+}
+
+#contactForm, label {
+  font-family: Oswald;
+  color: var(--cream);
+}
+
+#contactForm, .help-block {
+  color: var(--yellow);
 }
 
 .contact .info-box {
-  color: #444444;
+  font-family: "PT Sans Narrow", sans-serif !important;
+  color: var(--cream);
   text-align: center;
   box-shadow: 0 0 30px rgba(57, 62, 65, 0.7);
   padding: 20px 0 30px 0;
@@ -1548,7 +1587,7 @@ section {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #106eea;
+  color: var(--yellow);
   border-radius: 50%;
   padding: 8px;
   border: 2px dotted #b3d1fa;
@@ -1556,7 +1595,7 @@ section {
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #777777;
+  color: var(--cream);
   font-weight: 700;
   margin: 10px 0;
 }
@@ -1564,7 +1603,7 @@ section {
 .contact .info-box p {
   padding: 0;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 1.1em;
   margin-bottom: 0;
 }
 
