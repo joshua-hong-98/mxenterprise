@@ -42,6 +42,74 @@ span {
 }
 
 /*--------------------------------------------------------------
+# Modals
+--------------------------------------------------------------*/
+.btn {
+  border-width: 0px;
+  padding: 8px 14px;
+  font-size: 1em;
+}
+
+.btn-info, .btn-info:focus {
+  color: white;
+  font-weight: normal;
+  border-color: #698f9e;
+  background-color: #698f9e;
+}
+
+.btn-info:hover, .btn-info:active {
+  color: white;
+  font-weight: bold;
+  border-color: #698f9e;
+  background-color: #698f9e;
+}
+
+.modal-btn {
+  outline: none;
+}
+
+.modal-btn:focus {
+  outline: none;
+  outline-offset: 0px;
+}
+
+.modal-dialog {
+  width: 70% !important;
+  max-width: 3000px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.modal-content h3 {
+  font-family: 'Staatliches', cursive;
+  font-size: 1.2em;
+}
+
+.modal-content h4 {
+  font-family: 'Staatliches', cursive;
+  font-size: 1.2em;
+}
+
+.modal-content h5 {
+  font-size: 1em;
+}
+
+.modal-content p {
+  color: black;
+  font-size: 1em;
+}
+
+.modal-p {
+  text-align: justify;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.modal-content iframe {
+  width: 560px;
+  height: 315px;
+}
+
+/*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
 #preloader {

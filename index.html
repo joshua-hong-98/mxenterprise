@@ -341,7 +341,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Lorem Ipsum</a></h4>
+              <h4><a onclick="includeHTML('familystylemodal')" type="button" data-toggle="modal" data-target="#familystylemodal">Test Product</a></h4>
               <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
             </div>
           </div>
@@ -414,25 +414,27 @@
         </div>
       <!-- </div> -->
     </div>
-    <div class='row'>
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="100">
-        <div class="icon-box">
-          <div class="icon"><i class="bx bx-world"></i></div>
-          <h4><a href="">Nemo Enim</a></h4>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+      <div class='row'>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-world"></i></div>
+            <h4><a href="">Nemo Enim</a></h4>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+          </div>
         </div>
-      </div>
 
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-        <div class="icon-box">
-          <div class="icon"><i class="bx bx-slideshow"></i></div>
-          <h4><a href="">Dele cardo</a></h4>
-          <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-slideshow"></i></div>
+            <h4><a href="">Dele cardo</a></h4>
+            <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+          </div>
         </div>
-      </div>
 
+      </div>
     </div>
-  </div>
+
+    <div id="familystylemodal" w3-include-html="familystyle.html" class="modal fade" role="dialog"></div>
 
     </section>
     <!-- End Services Section -->
@@ -665,6 +667,8 @@
   <script src="js/main.js"></script>
   <script src="js/jqBootstrapValidation.js"></script>
   <script src="js/contact.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/jquery-3.3.1.js"></script>
 
 </body>
 
