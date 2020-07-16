@@ -41,10 +41,16 @@ span {
   color: var(--yellow) !important;
 }
 
+button:focus {
+  border: none;
+  outline: none;
+}
+
 /*--------------------------------------------------------------
 # Modals
 --------------------------------------------------------------*/
 .btn {
+  font-family: "Oswald", sans-serif !important;
   border-width: 0px;
   padding: 8px 14px;
   font-size: 1em;
@@ -64,6 +70,28 @@ span {
   background-color: #698f9e;
 }
 
+#close-btn:hover {
+  background-color: #f3f3f3;
+}
+
+.modal-header {
+  align-items: baseline;
+}
+
+.modal-header, .close {
+  width: auto;
+}
+
+.modal-title {
+  font-size: 1.2em;
+  color: var(--onyx);
+}
+
+.modal-subtitle {
+  color: var(--light-grey);
+  margin-bottom: 0px;
+}
+
 .modal-btn {
   outline: none;
 }
@@ -80,28 +108,31 @@ span {
 }
 
 .modal-content h3 {
-  font-family: 'Staatliches', cursive;
+  font-family: "Oswald", sans-serif !important;
   font-size: 1.2em;
+  color: var(--onyx);
 }
 
 .modal-content h4 {
-  font-family: 'Staatliches', cursive;
+  font-family: "Oswald", sans-serif !important;
   font-size: 1.2em;
+  color: var(--onyx);
 }
 
 .modal-content h5 {
-  font-size: 1em;
+  font-family: "Oswald", sans-serif !important;
+  font-size: 0.9em;
+  color: var(--light-grey)
 }
 
 .modal-content p {
-  color: black;
+  font-family: "PT Sans Narrow", sans-serif !important;
+  color: var(--light-grey);
   font-size: 1em;
 }
 
 .modal-p {
   text-align: justify;
-  margin-left: 5%;
-  margin-right: 5%;
 }
 
 .modal-content iframe {
