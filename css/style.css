@@ -1038,6 +1038,9 @@ section {
   /* display:flex; */
   margin-bottom: 20px;
   align-content: center;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+
 }
 
 .services .icon-box .icon {
@@ -1052,6 +1055,7 @@ section {
   justify-content: center;
   margin-bottom: 20px;
   transition: ease-in-out 0.3s;
+  /* padding:100px;  */
 }
 
 .services .icon-box .icon i {
