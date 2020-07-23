@@ -298,6 +298,18 @@ button:focus {
   font-family: "Poppins", sans-serif;
 }
 
+#header .under{
+  /* font-size: 32px; */
+  /* margin: 0;
+  padding: 0;
+  line-height: 1; */
+  position: relative;
+  align-content: space-around ;
+  /* font-weight: 600; */
+  /* letter-spacing: 0.8px; */
+  /* font-family: "Poppins", sans-serif; */
+}
+
 #header .logo a {
   color: var(--cream);
 }
@@ -823,7 +835,7 @@ section {
 }
 
 .featured-services .icon-box:hover::before {
-  background: #106eea;
+  background: var(--yellow);
   top: 0;
   border-radius: 0px;
 }
@@ -835,7 +847,7 @@ section {
 .featured-services .icon i {
   font-size: 48px;
   line-height: 1;
-  color: #106eea;
+  color: var(--yellow);
   transition: all 0.3s ease-in-out;
 }
 
@@ -1027,6 +1039,18 @@ section {
   background-color: var(--light-grey);
 }
 
+.services .bounding-box {
+
+  background-image: url("../img/ornamental-tubing.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* justify-content: center; */
+  height: 100%;
+  width: 100%;
+
+}
+
 .services .icon-box {
   text-align: center;
   border: 1px solid #e2eefd;
@@ -1045,11 +1069,11 @@ section {
 
 .services .icon-box .icon {
   margin: auto;
-  width: 64px;
-  height: 64px;
-  background: #f1f6fe;
-  border-radius: 4px;
-  border: 1px solid #deebfd;
+  width: 60px;
+  height: 60px;
+  /* background: #f1f6fe; */
+  /* border-radius: 4px; */
+  /* border: 1px solid #deebfd; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1096,6 +1120,7 @@ section {
 
 .prod-1{
   text-align:center;
+  justify-content: center;
   /* margin-top: 20px; */
   /* margin-bottom: 20px; */
 }
