@@ -1054,11 +1054,11 @@ section {
 .services .icon-box {
   text-align: center;
   border: 1px solid #e2eefd;
-  padding: 80px 20px;
+  padding: 10px 10px;
   transition: all ease-in-out 0.3s;
   background: #fff;
   /* padding-top:100px; */
-  margin-top: 20px;
+  /* margin-top: 20px; */
   /* display:flex; */
   margin-bottom: 20px;
   align-content: center;
@@ -1069,8 +1069,8 @@ section {
 
 .services .icon-box .icon {
   margin: auto;
-  width: 60px;
-  height: 60px;
+  width: 128px;
+  height: 128px;
   /* background: #f1f6fe; */
   /* border-radius: 4px; */
   /* border: 1px solid #deebfd; */
