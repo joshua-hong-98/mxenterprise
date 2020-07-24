@@ -1041,6 +1041,28 @@ section {
 
 .services .bounding-box {
 
+  background-image: url("../img/fence-tubing.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* justify-content: center; */
+  height: 100%;
+  width: 100%;
+}
+
+.services .bounding-box1 {
+
+  background-image: url("../img/structural-tubing.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* justify-content: center; */
+  height: 100%;
+  width: 100%;
+}
+
+.services .bounding-box2 {
+
   background-image: url("../img/ornamental-tubing.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -1048,7 +1070,72 @@ section {
   /* justify-content: center; */
   height: 100%;
   width: 100%;
+}
 
+.services .bounding-box3 {
+
+  background-image: url("../img/expanded-metal.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* justify-content: center; */
+  height: 120%;
+  width: 120%;
+}
+
+.services .bounding-box4 {
+
+  background-image: url("../img/perforated-bar.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* justify-content: center; */
+  height: 100%;
+  width: 100%;
+}
+
+.services .bounding-box5 {
+
+  background-image: url("../img/merchant-bar.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* justify-content: center; */
+  height: 100%;
+  width: 100%;
+}
+
+.services .bounding-box6 {
+
+  background-image: url("../img/barricade.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* justify-content: center; */
+  height: 100%;
+  width: 100%;
+}
+
+.services .bounding-box7{
+
+  background-image: url("../img/astm-a-53-sh-40.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* justify-content: center; */
+  height: 100%;
+  width: 100%;
+}
+
+.services .bounding-box8 {
+
+  background-image: url("../img/bsl.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* justify-content: center; */
+  height: 100%;
+  width: 100%;
 }
 
 .services .icon-box {
@@ -1125,6 +1212,16 @@ section {
   /* margin-bottom: 20px; */
 }
 
+.services .info-pic{
+
+  background-image: url("../img/fence-tubing-info.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* justify-content: center; */
+  height: 100%;
+  width: 100%;
+}
 
 /*--------------------------------------------------------------
 # Testimonials
