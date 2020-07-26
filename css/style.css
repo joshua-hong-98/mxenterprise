@@ -575,14 +575,14 @@ button:focus {
 #hero {
   width: 100%;
   height: 75vh;
-  background: url("../img/hero-bg.jpg") top left;
+  background: url("../img/hero-bg2.jpg") top left;
   background-size: cover;
   position: relative;
 }
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.6);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -606,7 +606,7 @@ button:focus {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #222222;
+  color: var(--cream);
   font-family: "Poppins", sans-serif;
 }
 
@@ -615,7 +615,7 @@ button:focus {
 }
 
 #hero h2 {
-  color: #555555;
+  color: var(--cream);
   margin: 5px 0 30px 0;
   font-size: 24px;
   font-weight: 400;
@@ -815,29 +815,11 @@ section {
   align-content: center;
   position: relative;
   overflow: hidden;
-  background: #fff;
+  background: var(--yellow);
   box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   z-index: 1;
-}
-
-.featured-services .icon-box::before {
-  content: '';
-  position: absolute;
-  background: #cbe0fb;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  top: 100%;
-  transition: all 0.3s;
-  z-index: -1;
-}
-
-.featured-services .icon-box:hover::before {
-  background: var(--yellow);
-  top: 0;
-  border-radius: 0px;
 }
 
 .featured-services .icon {
@@ -847,32 +829,22 @@ section {
 .featured-services .icon i {
   font-size: 48px;
   line-height: 1;
-  color: var(--yellow);
+  color: var(--onyx);
   transition: all 0.3s ease-in-out;
 }
 
 .featured-services .title {
+  color: var(--onyx);
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.featured-services .title a {
-  color: #111;
-}
-
 .featured-services .description {
-  font-size: 15px;
+  color: var(--onyx);
+  font-size: 1em;
   line-height: 28px;
   margin-bottom: 0;
-}
-
-.featured-services .icon-box:hover .title a, .featured-services .icon-box:hover .description {
-  color: #fff;
-}
-
-.featured-services .icon-box:hover .icon i {
-  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -1138,16 +1110,23 @@ section {
   width: 100%;
 }
 
+.services h4 {
+  margin-bottom: 20px;
+}
+
 .services .icon-box {
+  min-height: 375px;
+  min-width: 325px;
   text-align: center;
-  border: 1px solid #e2eefd;
+  border: 1px solid var(--cream);
+  border-radius: 5px;
   padding: 10px 10px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
+  background: var(--dark-grey);
   /* padding-top:100px; */
   /* margin-top: 20px; */
   /* display:flex; */
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   align-content: center;
   /* padding-left: 20px;
   padding-right: 20px; */
@@ -1176,14 +1155,21 @@ section {
 }
 
 .services .icon-box h4 {
+  min-width: 330px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
 }
 
 .services .icon-box h4 a {
-  color: #222222;
-  transition: ease-in-out 0.3s;
+  width: 100%;
+  color: var(--cream);
+  transition: 0.3s;
+}
+
+.services .icon-box h4 a:hover {
+  color: var(--yellow);
+  transition: 0.3s;
 }
 
 .services .icon-box p {
@@ -1193,16 +1179,12 @@ section {
 }
 
 .services .icon-box:hover {
-  border-color: #fff;
-  box-shadow: 0px 0 25px 0 rgba(16, 110, 234, 0.1);
+  border: 1px solid var(--yellow);
+  box-shadow: 0px 0 0px 0 var(--yellow);
 }
 
 .services .icon-box:hover h4 a, .services .icon-box:hover .icon i {
-  color: #106eea;
-}
-
-.services .icon-box:hover .icon {
-  border-color: #106eea;
+  color: color(--yellow);
 }
 
 .prod-1{
