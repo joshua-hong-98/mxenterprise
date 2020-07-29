@@ -104,7 +104,6 @@ button:focus {
 .modal-dialog {
   width: 70% !important;
   max-width: 3000px;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .modal-content h3 {
@@ -131,6 +130,12 @@ button:focus {
   font-size: 1em;
 }
 
+.modal-content li {
+  font-family: "PT Sans Narrow", sans-serif !important;
+  color: var(--light-grey);
+  font-size: 1em;
+}
+
 .modal-p {
   text-align: justify;
 }
@@ -138,6 +143,15 @@ button:focus {
 .modal-content iframe {
   width: 560px;
   height: 315px;
+}
+
+@media only screen
+  and (max-device-width: 812px)
+  and (orientation: portrait) {
+    .modal-dialog {
+      width: 96% !important;
+      z-index: 9999 !important;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -159,8 +173,8 @@ button:focus {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #106eea;
-  border-top-color: #e2eefd;
+  border: 6px solid var(--yellow);
+  border-top-color: var(--light-grey);
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -274,6 +288,35 @@ button:focus {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+#mx-nav-container {
+  justify-content: space-between;
+}
+
+#mx-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#mx-nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#mx-nav-items p {
+  margin-bottom: 0px;
+}
+
+#mx-nav-item1 {
+  margin-right: 10px;
+}
+
+#mx-nav-item2 {
+  margin-left: 10px;
+}
+
 #header {
   background: var(--onyx);
   transition: all 0.5s;
@@ -296,18 +339,6 @@ button:focus {
   font-weight: 600;
   letter-spacing: 0.8px;
   font-family: "Poppins", sans-serif;
-}
-
-#header .under{
-  /* font-size: 32px; */
-  /* margin: 0;
-  padding: 0;
-  line-height: 1; */
-  position: relative;
-  align-content: space-around ;
-  /* font-weight: 600; */
-  /* letter-spacing: 0.8px; */
-  /* font-family: "Poppins", sans-serif; */
 }
 
 #header .logo a {
@@ -467,7 +498,7 @@ button:focus {
   position: fixed;
   right: 15px;
   top: 15px;
-  z-index: 9998;
+  z-index: 1000;
   border: 0;
   background: none;
   font-size: 24px;
@@ -575,7 +606,7 @@ button:focus {
 #hero {
   width: 100%;
   height: 75vh;
-  background: url("../img/hero-bg2.jpg") top left;
+  background: url("../img/hero-bg1.jpg") top left;
   background-size: cover;
   position: relative;
 }

@@ -63,11 +63,15 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
+    <div id="mx-nav-container" class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="index.html">MX Industrial Corporation<span>.</span></a></h1>
-      <p class = "under">dba: MX Steel Wholesale</p>
-      <p class = "under">MX Enterprise System</p>
+      <div id="mx-nav">
+        <h1 class="logo mr-auto"><a href="index.html">MX Industrial Corporation<span>.</span></a></h1>
+        <div id="mx-nav-items">
+          <p id="mx-nav-item1">dba: MX Steel Wholesale</p>
+          <p id="mx-nav-item2">MX Enterprise System</p>
+        </div>
+      </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
@@ -291,7 +295,7 @@
 
               <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-                  <div class="icon"><i class='bx bxs-wrench'></i></div>
+                  <div class="icon"><i class='bx bx-globe'></i></div>
                   <h4 class="title">Indent Items</h4>
                   <p class="description">Big size of structural profile such as Wide Flange (A 992, A36), I-Beam</p>
                   <p class="description">Big size of structural Tubing & pipe & API that we do not carry on our warehouse</p>
@@ -436,7 +440,6 @@
   <script src="js/jqBootstrapValidation.js"></script>
   <script src="js/contact.js"></script>
   <script src="js/modal.js"></script>
-  <script src="js/jquery-3.3.1.js"></script>
   <script>
     var myVar = setInterval(ChangeBackground, 5000);
     var imageCount = 1;
