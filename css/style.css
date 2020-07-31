@@ -1272,16 +1272,15 @@ section {
   /* margin-bottom: 20px; */
 }
 
-.services .info-pic{
+/* .info-pic{
 
   background-image: url("../img/info1");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  /* justify-content: center; */
   height: 100%;
   width: 100%;
-}
+} */
 
 /*--------------------------------------------------------------
 # Testimonials
