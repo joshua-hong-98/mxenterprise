@@ -2180,3 +2180,16 @@ section {
     padding: 2px 0;
   }
 }
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+#extra {
+  background-color: var(--dark-grey);
+}
+
+#extra-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
