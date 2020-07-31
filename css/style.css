@@ -1259,6 +1259,7 @@ section {
 .services .icon-box:hover {
   border: 1px solid var(--yellow);
   box-shadow: 0px 0 0px 0 var(--yellow);
+  color: var(--yellow);
 }
 
 .services .icon-box:hover h4 a, .services .icon-box:hover .icon i {
@@ -2000,10 +2001,16 @@ section {
 --------------------------------------------------------------*/
 #footer {
   background: #fff;
-  padding: 0 0 30px 0;
+  padding: 0 0 0 0;
   color: var(--cream);
   font-size: 14px;
   background: var(--onyx);
+}
+
+#footer-bot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #footer .footer-newsletter {
