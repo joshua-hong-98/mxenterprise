@@ -29,6 +29,7 @@ $(function() {
           message: message
         },
         cache: false,
+        crossDomain: 'TRUE',
         success: function() {
           // Success message
           $('#success').html("<div class='alert alert-success'>");
