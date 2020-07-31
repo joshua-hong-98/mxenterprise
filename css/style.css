@@ -2193,3 +2193,9 @@ section {
   flex-direction: row;
   justify-content: space-evenly;
 }
+
+.alert-danger {
+  color: var(--cream);
+  background-color: var(--yellow);
+  border-color: transparent;
+}
