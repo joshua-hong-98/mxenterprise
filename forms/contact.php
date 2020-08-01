@@ -8,7 +8,7 @@
 
   $receiving_email_address = 'mxsteelemployee@gmail.com';
 
-  if( file_exists($php_email_form = 'php-email-form.php' )) {
+  if( file_exists($php_email_form = '../forms/php-email-form.php' )) {
     include( $php_email_form );
   } else {
     die( 'Unable to load the "PHP Email Form" Library!');
@@ -23,12 +23,14 @@
   $contact->subject = $_POST['subject'];
 
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
+  /*
   $contact->smtp = array(
     'host' => 'gmail.com',
     'username' => 'mxsteelemployee',
     'password' => 'if_needed_!23',
     'port' => '587'
   );
+  */
 
   $contact->add_message( $_POST['name'], 'From');
   $contact->add_message( $_POST['email'], 'Email');
