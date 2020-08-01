@@ -1,26 +1,39 @@
 <?php
-// Check for empty fields
-if(empty($_POST['name'])      ||
-   empty($_POST['email'])     ||
-   empty($_POST['phone'])     ||
-   empty($_POST['message'])   ||
-   !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
-   {
-   echo "No arguments Provided!";
-   return false;
-   }
+  /**
+  * Requires the "PHP Email Form" library
+  * The "PHP Email Form" library is available only in the pro version of the template
+  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
+  * For more info and help: https://bootstrapmade.com/php-email-form/
+  */
 
-$name = strip_tags(htmlspecialchars($_POST['name']));
-$email_address = strip_tags(htmlspecialchars($_POST['email']));
-$phone = strip_tags(htmlspecialchars($_POST['phone']));
-$message = strip_tags(htmlspecialchars($_POST['message']));
+  // Replace contact@example.com with your real receiving email address
+  $receiving_email_address = 'mxsteelemployee@gmail.com';
 
-// Create the email and send the message
-$to = 'mxsteelemployee@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
-$email_subject = "MX Enterprise Contact Form:  $name";
-$email_body = "You have received a new message from the MX Enterprise contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
-$headers = "From: noreply@mxenterprise.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
-$headers .= "Reply-To: $email_address";
-mail($to,$email_subject,$email_body,$headers);
-return true;
+  if( file_exists($php_email_form = '../forms/php-email-form.php' )) {
+    include( $php_email_form );
+  } else {
+    die( 'Unable to load the "PHP Email Form" Library!');
+  }
+
+  $contact = new PHP_Email_Form;
+  $contact->ajax = true;
+
+  $contact->to = $receiving_email_address;
+  $contact->from_name = $_POST['name'];
+  $contact->from_email = $_POST['email'];
+  $contact->subject = $_POST['subject'];
+
+  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
+  $contact->smtp = array(
+    'host' => 'gmail.com',
+    'username' => 'mxsteelemployee',
+    'password' => 'if_needed_!23',
+    'port' => '587'
+  );
+
+  $contact->add_message( $_POST['name'], 'From');
+  $contact->add_message( $_POST['email'], 'Email');
+  $contact->add_message( $_POST['message'], 'Message', 10);
+
+  echo $contact->send();
 ?>

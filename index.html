@@ -383,40 +383,36 @@
         <div class="row" data-aos="fade-up" data-aos-delay="100">
 
           <div class="col-lg-6 ">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3307.073229524085!2d-117.9748352!3d34.0163312!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2d680db66f18f%3A0x1d7ab91959ff56e6!2sM%20X%20Steel%20Wholesellers%20Inc!5e0!3m2!1sen!2sus!4v1594611983114!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3307.073229524085!2d-117.9748352!3d34.0163312!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2d680db66f18f%3A0x1d7ab91959ff56e6!2sM%20X%20Steel%20Wholesellers%20Inc!5e0!3m2!1sen!2sus!4v1594611983114!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 380px;" allowfullscreen></iframe>
 
           </div>
 
-          <div class="col-lg-6">
-            <form name="sentMessage" id="contactForm" novalidate>
-              <div class="control-group form-group">
-                <div class="controls">
-                  <label><b>Full Name:</b></label>
-                  <input type="text" class="form-control" name="name" id="name" required data-validation-required-message="Please enter your name.">
-                  <p class="help-block"></p>
+          <div id="contactForm" class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Full Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
                 </div>
               </div>
-              <div class="control-group form-group">
-                <div class="controls">
-                  <label><b>Phone Number:</b></label>
-                  <input type="tel" class="form-control" name="phone" id="phone" required data-validation-required-message="Please enter your phone number.">
-                </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
               </div>
-              <div class="control-group form-group">
-                <div class="controls">
-                  <label><b>Email Address:</b></label>
-                  <input type="email" class="form-control" name="email" id="email" required data-validation-required-message="Please enter your email address.">
-                </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
               </div>
-              <div class="control-group form-group">
-                <div class="controls">
-                  <label><b>Message:</b></label>
-                  <textarea rows="5" cols="100" class="form-control" name="message"  id="message" required data-validation-required-message="Please enter your message." maxlength="999" style="resize:none"></textarea>
-                </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div id="success"></div>
-              <!-- For success/fail messages -->
-              <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
+              <div class="text-center"><button type="submit" id="sendMessageButton">Send Message</button></div>
             </form>
           </div>
 
@@ -477,8 +473,7 @@
 
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact.js"></script>
+  <script src="js/validate.js"></script>
   <script src="js/modal.js"></script>
   <script>
     var myVar = setInterval(ChangeBackground, 5000);
