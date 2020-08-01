@@ -2208,3 +2208,15 @@ section {
   background-color: var(--yellow);
   border-color: transparent;
 }
+
+.kw-message-110293.kw-message-error {
+  background-color: var(--yellow) !important;
+}
+
+.kw-message-110293.kw-message-error span {
+  color: var(--cream) !important;
+}
+
+.help.is-danger-110293 {
+  color: var(--yellow) !important;
+}
