@@ -127,7 +127,7 @@
     console.log(action);
     $.ajax({
       type: "POST",
-      url: action,
+      url: "https://mxindustrialcorp.com/" + action,
       data: data,
       timeout: 40000
     }).done( function(msg){
