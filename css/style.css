@@ -1858,6 +1858,11 @@ section {
   color: var(--cream);
 }
 
+#contactForm, input {
+  font-family: Oswald;
+  color: var(--cream);
+}
+
 #contactForm, .help-block {
   color: var(--yellow);
 }
@@ -1893,13 +1898,16 @@ section {
 }
 
 .contact .php-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.4);
+  box-shadow: 0 0 30px rgba(57, 62, 65, 0.7);
   padding: 30px;
+  height: auto;
+  color: var(--onyx);
+  font-family: "PT Sans Narrow", sans-serif;
 }
 
 .contact .php-email-form .validate {
   display: none;
-  color: red;
+  color: var(--yellow);
   margin: 0 0 15px 0;
   font-weight: 400;
   font-size: 13px;
@@ -1907,8 +1915,8 @@ section {
 
 .contact .php-email-form .error-message {
   display: none;
-  color: #fff;
-  background: #ed3c0d;
+  color: var(--cream);
+  background: var(--yellow);
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -1948,9 +1956,10 @@ section {
 }
 
 .contact .php-email-form input, .contact .php-email-form textarea {
-  border-radius: 0;
+  border-radius: 12px;
   box-shadow: none;
-  font-size: 14px;
+  line-height: 24px;
+  font-size: 1.1em;
 }
 
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
@@ -2198,4 +2207,16 @@ section {
   color: var(--cream);
   background-color: var(--yellow);
   border-color: transparent;
+}
+
+.kw-message-110293.kw-message-error {
+  background-color: var(--yellow) !important;
+}
+
+.kw-message-110293.kw-message-error span {
+  color: var(--cream) !important;
+}
+
+.help.is-danger-110293 {
+  color: var(--yellow) !important;
 }
