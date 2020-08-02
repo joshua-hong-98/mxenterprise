@@ -41,7 +41,7 @@ span {
   color: var(--yellow) !important;
 }
 
-button {
+button, a {
   border: none;
   background-color: transparent;
   outline: none;
@@ -1208,7 +1208,6 @@ section {
   /* padding-top:100px; */
   /* margin-top: 20px; */
   /* display:flex; */
-  margin-bottom: 50px;
   align-content: center;
   /* padding-left: 20px;
   padding-right: 20px; */
@@ -1279,15 +1278,9 @@ section {
   /* margin-bottom: 20px; */
 }
 
-/* .info-pic{
-
-  background-image: url("../img/info1");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 100%;
-  width: 100%;
-} */
+.services a {
+  margin-bottom: 50px;
+}
 
 /*--------------------------------------------------------------
 # Testimonials
