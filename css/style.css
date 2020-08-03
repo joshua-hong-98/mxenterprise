@@ -1293,9 +1293,7 @@ section {
 }
 
 @supports (-webkit-touch-callout: none) {
-  .services .icon-box {
-    margin-bottom: 400px;
-  }
+  
 }
 
 @media (max-width: 1200px) {
