@@ -45,6 +45,7 @@ button, a {
   border: none;
   background-color: transparent;
   outline: none;
+  -webkit-appearance: none !important;
 }
 
 button:focus {
@@ -1294,12 +1295,6 @@ section {
 @supports (-webkit-touch-callout: none) {
   .services .icon-box {
     margin-bottom: 400px;
-  }
-
-  button {
-    border: none;
-    background-color: transparent;
-    outline: none;
   }
 }
 
