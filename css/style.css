@@ -1092,18 +1092,6 @@ section {
   height: 0;
 }
 
-@media (max-width: 1200px) {
-  .services .break {
-    display: block;
-    flex-basis: 100%;
-    height: 0;
-  }
-
-  .services .row {
-    justify-content: space-evenly;
-  }
-}
-
 .services .bounding-box {
 
   background-image: url("../img/fence-tubing.png");
@@ -1233,7 +1221,6 @@ section {
   align-content: center;
   margin-left: 20px;
   margin-right: 20px;
-
 }
 
 .services .icon-box .icon {
@@ -1305,7 +1292,26 @@ section {
 }
 
 @media (max-width: 1200px) {
+  .services .break {
+    display: block;
+    flex-basis: 100%;
+    height: 0;
+  }
 
+  .services .row {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 400px) {
+  .services .icon-box h4 {
+    min-width: 250px;
+  }
+
+  .services .icon-box {
+    min-height: 375px;
+    max-width: 325px;
+  }
 }
 
 /*--------------------------------------------------------------
