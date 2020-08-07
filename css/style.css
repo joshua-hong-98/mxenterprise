@@ -135,12 +135,14 @@ button:focus {
   font-family: "PT Sans Narrow", sans-serif !important;
   color: var(--light-grey);
   font-size: 1em;
+  line-height: 20px;
 }
 
 .modal-content li {
   font-family: "PT Sans Narrow", sans-serif !important;
   color: var(--light-grey);
   font-size: 1em;
+  line-height: 20px;
 }
 
 .modal-p {
@@ -150,6 +152,15 @@ button:focus {
 .modal-content iframe {
   width: 560px;
   height: 315px;
+}
+
+.modal-r{
+  display:flex;
+}
+
+.modal-c {
+  flex: 50%;
+  padding: 10px;
 }
 
 @media only screen
@@ -1095,7 +1106,7 @@ section {
 
 .services .bounding-box {
 
-  background-image: url("../img/fence-tubing.png");
+  background-image: url("../img/cap-rail.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1172,7 +1183,7 @@ section {
 
 .services .bounding-box7{
 
-  background-image: url("../img/astm-a-53-sh-40.png");
+  background-image: url("../img/round-tube.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1183,7 +1194,7 @@ section {
 
 .services .bounding-box8 {
 
-  background-image: url("../img/bsl.png");
+  background-image: url("../img/round-pipe.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1194,7 +1205,7 @@ section {
 
 .services .bounding-box9 {
 
-  background-image: url("../img/fence_panel.jpg");
+  background-image: url("../img/fence_panel.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1266,7 +1277,7 @@ section {
 }
 
 .services .icon-box p {
-  line-height: 24px;
+  line-height: 19px;
   font-size: 14px;
   margin-bottom: 0;
 }
@@ -1293,7 +1304,7 @@ section {
 }
 
 @supports (-webkit-touch-callout: none) {
-  
+
 }
 
 @media (max-width: 1200px) {
