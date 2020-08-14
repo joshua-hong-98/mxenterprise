@@ -1214,6 +1214,17 @@ section {
   width: 100%;
 }
 
+.services .bounding-box10 {
+
+  background-image: url("../img/clamp_and_wind_screen.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* justify-content: center; */
+  height: 100%;
+  width: 100%;
+}
+
 .services h4 {
   margin-bottom: 20px;
 }
